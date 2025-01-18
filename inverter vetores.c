@@ -15,7 +15,8 @@ for(i=0; i<10; i++){
 	}
 do{
 	printf("\nDigite a opcao desejada: \n(0)Finalizar o Programa: \n(1)Imprmir o vetor na ordem inicio ao fim: \n(2)Imprimir o vetor na ordem inversa:");
-	scanf("\n%d", &opcao);
+	printf("\n");
+	scanf("%d", &opcao);
 	
 	switch(opcao){
 	case 0: printf("\nPrograma Finalizado, Goodbye."); break; 
@@ -29,6 +30,7 @@ do{
 	for(i=9; i>=0; i--){
 		printf("%d ", vetor[i]);
 	}
+	default: printf("\nA Sophia e chorona! "); break;
 }
 }while(opcao != 0);
 	
